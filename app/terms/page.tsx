@@ -15,7 +15,7 @@ export default function TermsPage() {
         </h1>
 
         <p className="mt-5 text-sm text-[#888d87]">
-          Last updated: 30 August 2026
+          Last updated: 3 September 2026
         </p>
 
         <div className="mt-12 space-y-12 text-[17px] leading-8 text-[#606660]">
@@ -29,6 +29,11 @@ export default function TermsPage() {
             By creating an account or using RealWithin, you agree to these
             Terms. If you do not agree to these Terms, please do not use
             RealWithin.
+          </p>
+
+          <p>
+            RealWithin is operated by V. Bance, an individual developer trading
+            as RealWithin.
           </p>
 
           <Section title="1. About RealWithin">
@@ -144,6 +149,13 @@ export default function TermsPage() {
             </p>
 
             <p>
+              Where information you choose to provide contains special-category
+              personal information, RealWithin relies on the separate explicit
+              consent requested during account creation where required. Your
+              agreement to these Terms is separate from that consent.
+            </p>
+
+            <p>
               How personal information is handled is explained further in the{" "}
               <Link
                 href="/privacy"
@@ -155,28 +167,39 @@ export default function TermsPage() {
             </p>
           </Section>
 
-          <Section title="6. Free Features">
-            <p>RealWithin may provide features without charge.</p>
-
+          <Section title="6. Access to RealWithin">
             <p>
-              The core Reflect feature is currently available without a Premium
-              subscription.
+              RealWithin does not currently offer an ongoing free account tier.
             </p>
 
             <p>
-              The availability or functionality of free features may evolve as
-              RealWithin develops. We will not retrospectively charge you for a
-              period in which you used a feature for free.
+              Eligible new users may access RealWithin through a 14-day Premium
+              trial. After the trial ends, an active Premium subscription is
+              required to create new Reflections and generate new RealWithin
+              understanding.
+            </p>
+
+            <p>
+              If your trial or paid Premium access ends, you may continue to
+              sign in and view RealWithin content that was generated for you
+              before access ended. This existing content may be available on a
+              read-only basis, while new Reflections and new Premium-generated
+              understanding remain locked until Premium access is restored.
             </p>
           </Section>
 
           <Section title="7. Premium">
-            <p>RealWithin may offer an optional Premium subscription.</p>
+            <p>
+              Continued use of RealWithin&apos;s reflection and understanding
+              features after an eligible trial requires an active Premium
+              subscription.
+            </p>
 
-            <p>Premium may provide access to features including:</p>
+            <p>Premium provides access to features including:</p>
 
             <List
               items={[
+                "Reflect;",
                 "Patterns;",
                 "Memory;",
                 "You; and",
@@ -219,7 +242,8 @@ export default function TermsPage() {
             </p>
 
             <p>
-              To continue using Premium after the trial, you must separately
+              To continue creating new Reflections and generating new
+              RealWithin understanding after the trial, you must separately
               choose to purchase a Premium subscription through the Apple App
               Store or Google Play.
             </p>
@@ -230,8 +254,11 @@ export default function TermsPage() {
             </p>
 
             <p>
-              When Premium access ends, Premium-generated information may
-              become unavailable or hidden unless Premium access is restored.
+              When the trial ends without an active Premium subscription, the
+              RealWithin content already generated for you remains available to
+              view on a read-only basis. New Reflections and new
+              Premium-generated understanding remain locked until Premium
+              access is restored.
             </p>
           </Section>
 
@@ -517,13 +544,8 @@ export default function TermsPage() {
 
           <Section title="23. Applicable Rights">
             <p>
-              These Terms do not remove consumer or privacy rights provided to
-              you under mandatory laws in the country where you live.
-            </p>
-
-            <p>
-              Any governing-law or dispute provisions applicable to RealWithin
-              will operate subject to those mandatory rights.
+              These Terms do not remove consumer, privacy or other rights that
+              cannot be excluded under mandatory laws that apply to you.
             </p>
           </Section>
 
@@ -532,6 +554,8 @@ export default function TermsPage() {
 
             <p className="font-medium text-[#414641]">
               RealWithin
+              <br />
+              V. Bance, trading as RealWithin
               <br />
               <EmailLink />
             </p>

@@ -15,7 +15,7 @@ export default function PrivacyPage() {
         </h1>
 
         <p className="mt-5 text-sm text-[#888d87]">
-          Last updated: 30 August 2026
+          Last updated: 3 September 2026
         </p>
 
         <div className="mt-12 space-y-12 text-[17px] leading-8 text-[#606660]">
@@ -26,6 +26,12 @@ export default function PrivacyPage() {
             services, why it is used, how it is protected, and the choices you
             have regarding your information.
           </Intro>
+
+          <p>
+            RealWithin is operated by V. Bance, an individual developer trading as
+            RealWithin. For data-protection purposes, V. Bance is the controller
+            of personal information processed through RealWithin.
+          </p>
 
           <p>
             RealWithin is designed to help you reflect on your experiences and
@@ -98,18 +104,19 @@ export default function PrivacyPage() {
               assessments or diagnoses.
             </p>
 
-            <Subheading>Subscription information</Subheading>
+            <Subheading>Trial and subscription information</Subheading>
 
             <p>
-              If you purchase RealWithin Premium, information about your
-              subscription status and entitlement may be processed through our
-              subscription infrastructure.
+              When you start a RealWithin trial or purchase a RealWithin
+              subscription, information about your trial, subscription status
+              and entitlement may be processed through our subscription
+              infrastructure.
             </p>
 
             <p>
               RealWithin does not directly receive or store your complete
-              payment-card details. Purchases are processed through the relevant
-              app marketplace and subscription infrastructure.
+              payment-card details. Paid subscriptions are processed through
+              the relevant app marketplace and subscription infrastructure.
             </p>
 
             <Subheading>Notification information and preferences</Subheading>
@@ -242,20 +249,42 @@ export default function PrivacyPage() {
 
           <Section title="5. Your Reflections and Sensitive Information">
             <p>
-              RealWithin is designed around personal reflection. As a result,
-              you may choose to write about relationships, emotions, difficult
-              experiences or other private matters.
+              RealWithin is designed around personal reflection. You may choose
+              to write about relationships, emotions, health, difficult
+              experiences, beliefs, sexuality or other private matters.
             </p>
 
             <p>
-              Please only include information you are comfortable providing to
-              RealWithin.
+              Information you choose to include may therefore sometimes contain
+              information that data-protection law treats as special-category
+              or particularly sensitive personal information.
             </p>
 
             <p>
-              RealWithin does not require you to disclose medical information
-              or other highly sensitive personal information in order to use
-              the basic reflection feature.
+              RealWithin does not require you to include any particular type of
+              sensitive information. You control what you choose to share in
+              your reflections.
+            </p>
+
+            <p>
+              During account creation, RealWithin asks for your separate,
+              explicit consent to process special-category information that you
+              choose to provide where that processing is needed to provide
+              Reflections, Patterns, Memory and You.
+            </p>
+
+            <p>
+              Agreeing to RealWithin&apos;s Terms of Use does not itself provide
+              this consent.
+            </p>
+
+            <p>
+              You may withdraw this consent at any time through
+              RealWithin&apos;s Settings or by contacting <EmailLink />.
+              Withdrawal does not affect processing that took place lawfully
+              before consent was withdrawn. If you withdraw consent, some
+              reflection and understanding features may no longer be available
+              while that consent remains withdrawn.
             </p>
           </Section>
 
@@ -294,6 +323,14 @@ export default function PrivacyPage() {
               of personal information associated with your account, except where
               limited information must be retained for legitimate legal,
               security, fraud-prevention or regulatory purposes.
+            </p>
+
+            <p>
+              Ending a trial or paid subscription does not by itself delete
+              your RealWithin account or previously generated content. Existing
+              content may remain stored and available to you on a read-only
+              basis until you delete your account or it is otherwise deleted in
+              accordance with this Privacy Policy.
             </p>
 
             <p>
@@ -361,7 +398,7 @@ export default function PrivacyPage() {
                 "request deletion of your information;",
                 "restrict or object to certain processing;",
                 "request portability of certain information; and",
-                "withdraw consent where processing is based on consent.",
+                "withdraw consent at any time where processing is based on consent, including explicit consent used for special-category information.",
               ]}
             />
 
@@ -385,9 +422,10 @@ export default function PrivacyPage() {
             <List
               items={[
                 "performance of our agreement with you where processing is necessary to provide RealWithin;",
-                "your consent where applicable;",
-                "our legitimate interests in operating, protecting and improving RealWithin, where those interests are not overridden by your rights; and",
-                "compliance with legal obligations.",
+                "your consent where processing is based on consent;",
+                "our legitimate interests in operating, securing and maintaining RealWithin, where those interests are not overridden by your rights;",
+                "compliance with legal obligations; and",
+                "where information you choose to provide contains special-category personal information, your explicit consent as the applicable special-category processing condition.",
               ]}
             />
           </Section>
@@ -492,6 +530,8 @@ export default function PrivacyPage() {
 
             <p className="font-medium text-[#414641]">
               RealWithin
+              <br />
+              V. Bance, trading as RealWithin
               <br />
               <EmailLink />
             </p>
