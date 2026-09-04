@@ -3,29 +3,33 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen overflow-hidden bg-[#f8f3e9] text-[#3f433f]">
-      {/* Header */}
-      <header className="relative z-20">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-7 lg:px-10">
+    <div className="min-h-screen bg-[#f8f3e9] text-[#3f433f]">
+      {/* HEADER */}
+      <header className="border-b border-[#e3ddd2]">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
           <Link href="/" className="flex items-center gap-3">
-            <span className="relative h-10 w-10 overflow-hidden rounded-full border-2 border-[#303430]">
+            <span className="relative h-9 w-9 overflow-hidden rounded-full border-2 border-[#303430]">
               <span className="absolute inset-y-0 right-0 w-1/2 bg-[#303430]" />
             </span>
 
-            <span className="font-serif text-3xl text-[#292d29]">
+            <span className="font-serif text-2xl text-[#292d29]">
               RealWithin
             </span>
           </Link>
 
-          <nav className="flex items-center gap-6 text-sm text-[#737872]">
-            <Link href="/privacy" className="hover:text-[#303430]">
-              Privacy
+          <nav className="flex items-center gap-5 text-sm text-[#666c66]">
+            <Link
+              href="#journey"
+              className="hidden transition hover:text-[#303430] sm:inline"
+            >
+              How it works
             </Link>
-            <Link href="/terms" className="hover:text-[#303430]">
-              Terms
-            </Link>
-            <Link href="/support" className="hover:text-[#303430]">
-              Support
+
+            <Link
+              href="/try"
+              className="rounded-full bg-[#68786b] px-5 py-2.5 font-semibold text-white transition hover:bg-[#5d6c60]"
+            >
+              Try RealWithin
             </Link>
           </nav>
         </div>
@@ -33,205 +37,204 @@ export default function Home() {
 
       <main>
         {/* HERO */}
-        <section className="relative">
-          <div className="absolute -left-40 top-10 h-[520px] w-[520px] rounded-full bg-[#efe5d5]/70 blur-3xl" />
-          <div className="absolute -right-40 top-0 h-[600px] w-[600px] rounded-full bg-[#e7e9d9]/80 blur-3xl" />
+        <section className="relative overflow-hidden">
+          <div className="absolute -left-40 top-0 h-[410px] w-[410px] rounded-full bg-[#efe5d5]/70 blur-3xl" />
+          <div className="absolute -right-40 top-0 h-[440px] w-[440px] rounded-full bg-[#e7e9d9]/70 blur-3xl" />
 
-          <div className="relative mx-auto grid min-h-[720px] max-w-7xl items-center gap-16 px-6 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:px-10">
-            <div className="max-w-3xl">
-              <p className="mb-7 text-sm font-medium uppercase tracking-[0.2em] text-[#899087]">
-                Personal reflection · Understanding over time
+          <div className="relative mx-auto max-w-5xl px-6 py-16 text-center sm:py-20 lg:px-10 lg:py-24">
+            <h1 className="mx-auto max-w-4xl font-serif text-5xl leading-[0.98] tracking-[-0.04em] text-[#292d29] sm:text-6xl lg:text-[72px]">
+              Understand yourself.
+              <span className="mt-2 block text-[#a88353]">
+                Over time.
+              </span>
+            </h1>
+
+            <p className="mx-auto mt-7 max-w-2xl text-lg leading-8 text-[#646a64]">
+              RealWithin helps you reflect on everyday moments and notice
+              patterns, changes and insights that can be easy to miss over
+              time.
+            </p>
+
+            <div className="mt-8 flex flex-col items-center">
+              <Link
+                href="/try"
+                className="rounded-full bg-[#68786b] px-7 py-3.5 font-semibold text-white transition hover:bg-[#5d6c60]"
+              >
+                Try RealWithin
+              </Link>
+
+              <p className="mt-3 text-sm text-[#858a84]">
+                No account needed.
               </p>
 
-              <h1 className="font-serif text-6xl leading-[0.98] tracking-[-0.045em] text-[#292d29] sm:text-7xl lg:text-[88px]">
-                Understand yourself.
-                <span className="mt-2 block text-[#a88353]">
-                  Over time.
-                </span>
-              </h1>
-
-              <p className="mt-9 max-w-xl text-xl leading-8 text-[#646a64]">
-                What if your everyday moments are telling you something?
-                RealWithin connects your reflections over time to reveal
-                patterns, changes and insights you might otherwise miss.
-              </p>
-
-              <div className="mt-10 flex flex-wrap gap-4">
-                <span className="rounded-full bg-[#68786b] px-7 py-4 font-semibold text-white">
-                  Reflect today
-                </span>
-
-                <span className="rounded-full border border-[#d5cfc3] bg-[#fffaf2] px-7 py-4 font-medium text-[#505650]">
-                  Understand yourself over time
-                </span>
-              </div>
-            </div>
-
-            {/* Phone */}
-            <div className="relative flex justify-center lg:justify-end">
-              <div className="absolute right-[-110px] top-20 hidden h-80 w-56 rotate-12 rounded-full bg-[#dfe4cc]/70 blur-2xl lg:block" />
-
-              <div className="relative w-[310px] rotate-[3deg] rounded-[52px] bg-[#171917] p-[10px] shadow-[0_35px_80px_rgba(60,52,40,0.20)] sm:w-[350px]">
-                <div className="overflow-hidden rounded-[44px] bg-[#f8f3e9]">
-                  <Image
-                    src="/pattern-screen.png"
-                    alt="RealWithin Patterns screen"
-                    width={828}
-                    height={1792}
-                    priority
-                    className="h-auto w-full"
-                  />
-                </div>
-              </div>
+              <Link
+                href="#journey"
+                className="mt-5 text-sm font-medium text-[#687068] underline decoration-[#b8bdb6] underline-offset-4 transition hover:text-[#303430]"
+              >
+                See how it works
+              </Link>
             </div>
           </div>
         </section>
 
         {/* JOURNEY */}
-        <section className="relative border-y border-[#ded7ca] bg-[#fdfaf4]">
-          <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10">
-            <div className="mb-14 max-w-2xl">
-              <p className="text-sm uppercase tracking-[0.2em] text-[#92978f]">
-                How RealWithin grows with you
-              </p>
-
-              <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-[#414641] sm:text-5xl">
-                One reflection becomes more meaningful over time.
+        <section
+          id="journey"
+          className="border-y border-[#ded8cc] bg-[#fdfaf4]"
+        >
+          <div className="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-20">
+            <div className="mx-auto max-w-2xl text-center">
+              <h2 className="text-3xl font-semibold tracking-[-0.03em] text-[#414641] sm:text-4xl">
+                See how RealWithin works.
               </h2>
             </div>
 
-            <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               <JourneyCard
-                number="01"
+                icon="/assets/tabs/reflect.svg"
                 title="Reflect"
                 text="Share how you feel and what is on your mind today."
               />
+
               <JourneyCard
-                number="02"
+                icon="/assets/tabs/patterns.svg"
                 title="Patterns"
-                text="See the reactions and ways of responding that keep returning."
+                text="Notice patterns in how you respond."
               />
+
               <JourneyCard
-                number="03"
+                icon="/assets/tabs/memory.svg"
                 title="Memory"
-                text="Notice when something meaningful begins to change."
+                text="See when something meaningful starts to change."
               />
+
               <JourneyCard
-                number="04"
-                title="You"
-                text="See deeper perspectives on who you may be becoming."
+                icon="/assets/tabs/you.svg"
+                title="YOU"
+                text="Discover deeper insights as your reflections build."
               />
             </div>
           </div>
         </section>
 
-        {/* WHAT BECOMES VISIBLE */}
-        <section className="relative mx-auto max-w-7xl px-6 py-28 lg:px-10">
-          <div className="grid items-start gap-16 lg:grid-cols-2">
-            <div>
-              <p className="text-sm uppercase tracking-[0.2em] text-[#92978f]">
-                What becomes visible
-              </p>
+        {/* PRODUCT PROOF */}
+        <section className="mx-auto max-w-6xl px-6 py-16 lg:px-10 lg:py-20">
+          <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+            <div className="order-2 lg:order-1">
+              <div className="relative mx-auto h-[390px] w-full max-w-[460px] overflow-hidden rounded-[30px] border border-[#ded8cc] bg-[#f3efe6] shadow-[0_16px_45px_rgba(70,60,45,0.06)] sm:h-[420px]">
+                <div className="absolute -left-20 -top-20 h-60 w-60 rounded-full bg-[#efe5d5]/65 blur-3xl" />
+                <div className="absolute -bottom-24 -right-20 h-64 w-64 rounded-full bg-[#e4e7d8]/70 blur-3xl" />
 
-              <h2 className="mt-5 max-w-xl text-4xl font-semibold leading-tight tracking-[-0.03em] text-[#414641] sm:text-5xl">
-                There are things about yourself that are difficult to see while
-                you&apos;re living them.
+                <div className="absolute inset-x-5 bottom-0 top-0 overflow-hidden rounded-t-[24px] sm:inset-x-8">
+                  <Image
+                    src="/pattern-screen.png"
+                    alt="A RealWithin Pattern based on reflections"
+                    width={828}
+                    height={1792}
+                    className="absolute left-1/2 top-[-155px] w-[320px] max-w-none -translate-x-1/2 sm:top-[-175px] sm:w-[360px]"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="order-1 lg:order-2">
+              <h2 className="max-w-lg text-3xl font-semibold leading-tight tracking-[-0.03em] text-[#414641] sm:text-4xl">
+                A single moment can become part of a bigger picture.
               </h2>
-            </div>
 
-            <div className="rounded-[38px] bg-[#fffdf8] p-9 shadow-[0_15px_50px_rgba(70,60,45,0.06)] sm:p-12">
-              <div className="space-y-7 text-xl leading-8 text-[#686e68]">
-                <p>The reactions that keep returning.</p>
-                <p>The needs you keep putting aside.</p>
-                <p>The assumptions you make without noticing.</p>
-                <p>The ways you&apos;re changing before you even realise it.</p>
-              </div>
-
-              <div className="mt-10 border-t border-[#ebe5da] pt-8">
-                <p className="text-2xl font-semibold text-[#485048]">
-                  RealWithin helps make them visible.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* INSIGHT EXPERIENCE */}
-        <section className="relative bg-[#e9eadf] py-28">
-          <div className="absolute left-0 top-0 h-full w-1/3 rounded-r-full bg-[#f2eadf]/55 blur-3xl" />
-
-          <div className="relative mx-auto max-w-5xl px-6 text-center lg:px-10">
-            <p className="text-sm uppercase tracking-[0.2em] text-[#878d86]">
-              Based on your reflections
-            </p>
-
-            <h2 className="mx-auto mt-5 max-w-3xl text-4xl font-semibold leading-tight tracking-[-0.03em] text-[#3f443f] sm:text-5xl">
-              Small moments can reveal something much bigger over time.
-            </h2>
-
-            <div className="mx-auto mt-12 max-w-3xl rounded-[40px] bg-[#fffdf8] px-8 py-10 text-left shadow-[0_18px_50px_rgba(70,60,45,0.07)] sm:px-12">
-              <p className="text-sm uppercase tracking-[0.18em] text-[#9a9e98]">
-                RealWithin
+              <p className="mt-5 max-w-lg text-lg leading-8 text-[#6c726c]">
+                Across different days, RealWithin can spot repeated patterns
+                and small changes.
               </p>
 
-              <p className="mt-5 text-2xl leading-9 text-[#505550]">
-                Start with one short reflection about your day. RealWithin
-                gives you a thoughtful perspective in the moment, then begins
-                connecting what you share across time.
+              <p className="mt-4 max-w-lg text-lg leading-8 text-[#6c726c]">
+                It does not define you. It gives you another way to look at
+                what you have shared.
               </p>
             </div>
           </div>
         </section>
 
-        {/* SIMPLE */}
-        <section className="mx-auto max-w-6xl px-6 py-28 text-center lg:px-10">
-          <h2 className="text-4xl font-semibold tracking-[-0.03em] text-[#414641] sm:text-5xl">
-            No pressure to have the right words.
-          </h2>
+        {/* TRY REALWITHIN */}
+        <section className="border-y border-[#d9dbcf] bg-[#e9eadf]">
+          <div className="mx-auto max-w-5xl px-6 py-16 text-center lg:px-10 lg:py-20">
+            <div className="mx-auto max-w-2xl">
+              <h2 className="text-3xl font-semibold tracking-[-0.03em] text-[#3f443f] sm:text-4xl">
+                Start with how you feel right now.
+              </h2>
 
-          <p className="mx-auto mt-7 max-w-2xl text-lg leading-8 text-[#70756f]">
-            No long journal entries. No endless tracking. Just small moments of
-            reflection that gradually build into something more valuable.
-          </p>
+              <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-[#6c726c]">
+                Choose a feeling and what it&apos;s connected to. You will get
+                a preview of how the app works.
+              </p>
 
-          <p className="mt-10 font-serif text-4xl text-[#9f7d50] sm:text-5xl">
-            A clearer understanding of yourself.
-          </p>
+              <Link
+                href="/try"
+                className="mt-8 inline-flex rounded-full bg-[#68786b] px-7 py-3.5 font-semibold text-white transition hover:bg-[#5d6c60]"
+              >
+                Try RealWithin
+              </Link>
+            </div>
+          </div>
         </section>
 
-        {/* FINAL */}
-        <section className="border-t border-[#ded8cc] bg-[#fbf7ef]">
-          <div className="mx-auto max-w-5xl px-6 py-24 text-center lg:px-10">
-            <div className="space-y-1 text-3xl font-semibold leading-tight text-[#414641] sm:text-4xl">
-              <p>Reflect today.</p>
-              <p>See what repeats.</p>
-              <p>Notice what changes.</p>
-              <p>Understand yourself over time.</p>
-            </div>
+        {/* TRUST */}
+        <section className="mx-auto max-w-6xl px-6 py-16 lg:px-10">
+          <div className="grid gap-8 text-center sm:grid-cols-3">
+            <TrustItem
+              title="You choose what to share"
+              text="Share a feeling, a few words, or more when you want to."
+            />
 
-            <p className="mx-auto mt-9 max-w-xl text-sm leading-6 text-[#818680]">
-              RealWithin is designed for personal reflection and
-              self-understanding. It is not a medical, therapy or diagnostic
-              service.
+            <TrustItem
+              title="Built from what you share"
+              text="RealWithin uses your reflections to build Patterns, Memory and YOU."
+            />
+
+            <TrustItem
+              title="Not therapy or diagnosis"
+              text="RealWithin is for personal reflection and self-understanding."
+            />
+          </div>
+        </section>
+
+        {/* FINAL CTA */}
+        <section className="relative overflow-hidden border-t border-[#ded8cc] bg-[#fbf7ef]">
+          <div className="absolute left-1/2 top-[-180px] h-[360px] w-[650px] -translate-x-1/2 rounded-full bg-[#eee5d5]/60 blur-3xl" />
+
+          <div className="relative mx-auto max-w-4xl px-6 py-16 text-center lg:px-10 lg:py-20">
+            <p className="text-lg font-medium text-[#5f655f]">
+              Curious what you might notice?
             </p>
+
+            <Link
+              href="/try"
+              className="mt-6 inline-flex rounded-full bg-[#68786b] px-7 py-3.5 font-semibold text-white transition hover:bg-[#5d6c60]"
+            >
+              Try RealWithin
+            </Link>
           </div>
         </section>
       </main>
 
+      {/* FOOTER */}
       <footer className="border-t border-[#ded8cc] bg-[#f8f3e9]">
-        <div className="mx-auto flex max-w-7xl flex-col gap-6 px-6 py-10 text-sm text-[#747973] sm:flex-row sm:items-center sm:justify-between lg:px-10">
+        <div className="mx-auto flex max-w-7xl flex-col gap-5 px-6 py-8 text-sm text-[#747973] sm:flex-row sm:items-center sm:justify-between lg:px-10">
           <p>© 2026 RealWithin</p>
 
-          <div className="flex flex-wrap gap-6">
+          <div className="flex flex-wrap gap-5">
             <Link href="/privacy" className="hover:text-[#343934]">
               Privacy
             </Link>
+
             <Link href="/terms" className="hover:text-[#343934]">
               Terms
             </Link>
+
             <Link href="/support" className="hover:text-[#343934]">
               Support
             </Link>
+
             <Link href="/delete-account" className="hover:text-[#343934]">
               Delete account
             </Link>
@@ -243,23 +246,51 @@ export default function Home() {
 }
 
 function JourneyCard({
-  number,
+  icon,
   title,
   text,
 }: {
-  number: string;
+  icon: string;
   title: string;
   text: string;
 }) {
   return (
-    <div className="rounded-[32px] border border-[#e4ded3] bg-[#fffdf8] p-7">
-      <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#8b938b] text-xs font-medium text-[#777e77]">
-        {number}
-      </div>
+    <div className="rounded-[22px] border border-[#e4ded3] bg-[#fffdf8] p-6">
+      <Image
+        src={icon}
+        alt=""
+        width={34}
+        height={34}
+        className="mx-auto h-[34px] w-[34px] object-contain lg:mx-0"
+      />
 
-      <h3 className="mt-7 text-2xl font-semibold text-[#414641]">{title}</h3>
+      <h3 className="mt-4 text-center text-lg font-semibold text-[#414641] lg:text-left">
+        {title}
+      </h3>
 
-      <p className="mt-3 leading-7 text-[#767b75]">{text}</p>
+      <p className="mt-2 text-center text-[15px] leading-6 text-[#767b75] lg:text-left">
+        {text}
+      </p>
+    </div>
+  );
+}
+
+function TrustItem({
+  title,
+  text,
+}: {
+  title: string;
+  text: string;
+}) {
+  return (
+    <div>
+      <h3 className="text-lg font-semibold text-[#414641]">
+        {title}
+      </h3>
+
+      <p className="mx-auto mt-2 max-w-xs text-[15px] leading-6 text-[#747a74]">
+        {text}
+      </p>
     </div>
   );
 }

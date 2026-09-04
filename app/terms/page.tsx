@@ -1,41 +1,44 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 
 export default function TermsPage() {
   return (
     <div className="min-h-screen bg-[#f8f3e9] text-[#3f433f]">
       <Header />
 
-      <main className="mx-auto max-w-4xl px-6 py-16 sm:px-10 sm:py-24">
-        <p className="text-sm uppercase tracking-[0.2em] text-[#8c928b]">
-          Legal
-        </p>
+      <main className="mx-auto max-w-4xl px-6 py-12 sm:px-10 sm:py-16">
+        {/* INTRO */}
+        <div className="max-w-3xl">
+          <h1 className="font-serif text-4xl tracking-tight text-[#292d29] sm:text-5xl">
+            Terms of Use
+          </h1>
 
-        <h1 className="mt-4 font-serif text-5xl tracking-tight text-[#292d29] sm:text-6xl">
-          Terms of Use
-        </h1>
-
-        <p className="mt-5 text-sm text-[#888d87]">
-          Last updated: 3 September 2026
-        </p>
-
-        <div className="mt-12 space-y-12 text-[17px] leading-8 text-[#606660]">
-          <p className="text-xl leading-9 text-[#555b55]">
-            These Terms of Use (“Terms”) govern your use of the RealWithin
-            mobile application and related services (“RealWithin”, the
-            “Service”).
+          <p className="mt-4 text-sm text-[#888d87]">
+            Last updated: 4 September 2026
           </p>
 
-          <p>
-            By creating an account or using RealWithin, you agree to these
-            Terms. If you do not agree to these Terms, please do not use
-            RealWithin.
-          </p>
+          <div className="mt-8 space-y-4 text-[16px] leading-7 text-[#606660] sm:text-[17px] sm:leading-8">
+            <p className="text-lg leading-8 text-[#555b55]">
+              These Terms of Use (“Terms”) govern your use of the RealWithin
+              mobile application and related services (“RealWithin”, the
+              “Service”).
+            </p>
 
-          <p>
-            RealWithin is operated by V. Bance, an individual developer trading
-            as RealWithin.
-          </p>
+            <p>
+              By creating an account or using RealWithin, you agree to these
+              Terms. If you do not agree to these Terms, please do not use
+              RealWithin.
+            </p>
 
+            <p>
+              RealWithin is operated by V. Bance, an individual developer
+              trading as RealWithin.
+            </p>
+          </div>
+        </div>
+
+        {/* TERMS */}
+        <div className="mt-12 space-y-10 text-[16px] leading-7 text-[#606660] sm:text-[17px] sm:leading-8">
           <Section title="1. About RealWithin">
             <p>
               RealWithin is a personal reflection application designed to help
@@ -96,7 +99,9 @@ export default function TermsPage() {
               incomplete or inappropriate.
             </p>
 
-            <p>They should not be treated as statements of fact about you.</p>
+            <p>
+              They should not be treated as statements of fact about you.
+            </p>
 
             <p>
               RealWithin is intended to help you notice possibilities in what
@@ -115,13 +120,12 @@ export default function TermsPage() {
 
             <p>
               You agree to provide accurate account information and to take
-              reasonable steps to keep your login credentials secure.
+              reasonable steps to keep your login details secure.
             </p>
 
             <p>
-              You are responsible for activity occurring through your account
-              where that activity results from your failure to protect your
-              credentials.
+              You are responsible for activity through your account where that
+              activity results from your failure to protect your login details.
             </p>
 
             <p>
@@ -182,9 +186,13 @@ export default function TermsPage() {
             <p>
               If your trial or paid Premium access ends, you may continue to
               sign in and view RealWithin content that was generated for you
-              before access ended. This existing content may be available on a
-              read-only basis, while new Reflections and new Premium-generated
-              understanding remain locked until Premium access is restored.
+              before access ended.
+            </p>
+
+            <p>
+              Existing content may remain available on a read-only basis, while
+              new Reflections and new Premium-generated understanding remain
+              locked until Premium access is restored.
             </p>
           </Section>
 
@@ -209,10 +217,11 @@ export default function TermsPage() {
 
             <p>Current Premium subscription options include:</p>
 
-            <div className="rounded-[28px] bg-[#fffdf8] p-7">
+            <div className="rounded-[22px] border border-[#e4ded3] bg-[#fffdf8] p-6">
               <p className="font-semibold text-[#414641]">
                 Monthly Premium: €11.99 per month
               </p>
+
               <p className="mt-2 font-semibold text-[#414641]">
                 Annual Premium: €114.99 per year
               </p>
@@ -226,7 +235,7 @@ export default function TermsPage() {
 
             <p>
               The price displayed by the applicable marketplace before purchase
-              is the price applicable to that transaction.
+              is the price that applies to that transaction.
             </p>
           </Section>
 
@@ -271,13 +280,13 @@ export default function TermsPage() {
             <p>
               Where you purchase an auto-renewing subscription, your
               subscription will continue and the marketplace may charge your
-              chosen payment method for subsequent subscription periods unless
-              you cancel according to the marketplace&apos;s applicable rules.
+              chosen payment method for later subscription periods unless you
+              cancel according to the marketplace&apos;s rules.
             </p>
 
             <p>
-              Pricing, renewal timing, billing and cancellation information will
-              be shown as part of the purchase process.
+              Pricing, renewal timing, billing and cancellation information
+              will be shown as part of the purchase process.
             </p>
 
             <p>
@@ -347,7 +356,9 @@ export default function TermsPage() {
               regulatory retention requirements.
             </p>
 
-            <p>Account deletion is irreversible once completed.</p>
+            <p>
+              Account deletion is irreversible once completed.
+            </p>
           </Section>
 
           <Section title="13. Notifications">
@@ -434,7 +445,9 @@ export default function TermsPage() {
               intellectual property to you.
             </p>
 
-            <p>Your original reflections remain yours as described in Section 5.</p>
+            <p>
+              Your original reflections remain yours as described in Section 5.
+            </p>
           </Section>
 
           <Section title="17. Availability and Changes">
@@ -504,7 +517,9 @@ export default function TermsPage() {
               provided by the Service.
             </p>
 
-            <p>Your statutory consumer rights remain unaffected.</p>
+            <p>
+              Your statutory consumer rights remain unaffected.
+            </p>
           </Section>
 
           <Section title="21. Privacy">
@@ -550,7 +565,9 @@ export default function TermsPage() {
           </Section>
 
           <Section title="24. Contact">
-            <p>Questions about these Terms or RealWithin can be sent to:</p>
+            <p>
+              Questions about these Terms or RealWithin can be sent to:
+            </p>
 
             <p className="font-medium text-[#414641]">
               RealWithin
@@ -570,19 +587,32 @@ export default function TermsPage() {
 
 function Header() {
   return (
-    <header className="border-b border-[#ded8cc]">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-7 sm:px-10">
+    <header className="border-b border-[#e3ddd2]">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
         <Link href="/" className="flex items-center gap-3">
           <span className="relative h-9 w-9 overflow-hidden rounded-full border-2 border-[#303430]">
             <span className="absolute inset-y-0 right-0 w-1/2 bg-[#303430]" />
           </span>
-          <span className="font-serif text-2xl text-[#292d29]">RealWithin</span>
+
+          <span className="font-serif text-2xl text-[#292d29]">
+            RealWithin
+          </span>
         </Link>
 
-        <nav className="flex gap-5 text-sm text-[#737872]">
-          <Link href="/privacy">Privacy</Link>
-          <Link href="/terms">Terms</Link>
-          <Link href="/support">Support</Link>
+        <nav className="flex items-center gap-5 text-sm text-[#666c66]">
+          <Link
+            href="/#journey"
+            className="hidden transition hover:text-[#303430] sm:inline"
+          >
+            How it works
+          </Link>
+
+          <Link
+            href="/try"
+            className="rounded-full bg-[#68786b] px-5 py-2.5 font-semibold text-white transition hover:bg-[#5d6c60]"
+          >
+            Try RealWithin
+          </Link>
         </nav>
       </div>
     </header>
@@ -592,13 +622,25 @@ function Header() {
 function Footer() {
   return (
     <footer className="border-t border-[#ded8cc]">
-      <div className="mx-auto flex max-w-7xl flex-col gap-5 px-6 py-9 text-sm text-[#777c76] sm:flex-row sm:justify-between sm:px-10">
+      <div className="mx-auto flex max-w-7xl flex-col gap-5 px-6 py-8 text-sm text-[#777c76] sm:flex-row sm:items-center sm:justify-between lg:px-10">
         <p>© 2026 RealWithin</p>
+
         <div className="flex flex-wrap gap-5">
-          <Link href="/privacy">Privacy</Link>
-          <Link href="/terms">Terms</Link>
-          <Link href="/support">Support</Link>
-          <Link href="/delete-account">Delete account</Link>
+          <Link href="/privacy" className="hover:text-[#343934]">
+            Privacy
+          </Link>
+
+          <Link href="/terms" className="hover:text-[#343934]">
+            Terms
+          </Link>
+
+          <Link href="/support" className="hover:text-[#343934]">
+            Support
+          </Link>
+
+          <Link href="/delete-account" className="hover:text-[#343934]">
+            Delete account
+          </Link>
         </div>
       </div>
     </footer>
@@ -610,14 +652,17 @@ function Section({
   children,
 }: {
   title: string;
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
-    <section className="space-y-5">
-      <h2 className="text-2xl font-semibold tracking-tight text-[#3f443f]">
+    <section className="border-t border-[#e4ded3] pt-8">
+      <h2 className="text-xl font-semibold tracking-tight text-[#3f443f] sm:text-2xl">
         {title}
       </h2>
-      {children}
+
+      <div className="mt-4 space-y-4">
+        {children}
+      </div>
     </section>
   );
 }

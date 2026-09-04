@@ -1,49 +1,55 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 
 export default function PrivacyPage() {
   return (
     <div className="min-h-screen bg-[#f8f3e9] text-[#3f433f]">
       <Header />
 
-      <main className="mx-auto max-w-4xl px-6 py-16 sm:px-10 sm:py-24">
-        <p className="text-sm uppercase tracking-[0.2em] text-[#8c928b]">
-          Legal
-        </p>
+      <main className="mx-auto max-w-4xl px-6 py-12 sm:px-10 sm:py-16">
+        {/* INTRO */}
+        <div className="max-w-3xl">
+          <h1 className="font-serif text-4xl tracking-tight text-[#292d29] sm:text-5xl">
+            Privacy Policy
+          </h1>
 
-        <h1 className="mt-4 font-serif text-5xl tracking-tight text-[#292d29] sm:text-6xl">
-          Privacy Policy
-        </h1>
-
-        <p className="mt-5 text-sm text-[#888d87]">
-          Last updated: 3 September 2026
-        </p>
-
-        <div className="mt-12 space-y-12 text-[17px] leading-8 text-[#606660]">
-          <Intro>
-            RealWithin (“RealWithin”, “we”, “us” or “our”) respects your
-            privacy. This Privacy Policy explains what information is collected
-            when you use the RealWithin mobile application and related
-            services, why it is used, how it is protected, and the choices you
-            have regarding your information.
-          </Intro>
-
-          <p>
-            RealWithin is operated by V. Bance, an individual developer trading as
-            RealWithin. For data-protection purposes, V. Bance is the controller
-            of personal information processed through RealWithin.
+          <p className="mt-4 text-sm text-[#888d87]">
+            Last updated: 4 September 2026
           </p>
 
-          <p>
-            RealWithin is designed to help you reflect on your experiences and
-            recognise patterns and changes in what you have shared over time.
-            RealWithin is not a medical service, therapy service, diagnostic
-            tool or substitute for professional care.
-          </p>
+          <div className="mt-8 space-y-4 text-[16px] leading-7 text-[#606660] sm:text-[17px] sm:leading-8">
+            <Intro>
+              RealWithin (“RealWithin”, “we”, “us” or “our”) respects your
+              privacy. This Privacy Policy explains what information is
+              collected when you use the RealWithin mobile application and
+              related services, why it is used, how it is protected, and the
+              choices you have regarding your information.
+            </Intro>
 
+            <p>
+              RealWithin is operated by V. Bance, an individual developer
+              trading as RealWithin. For data-protection purposes, V. Bance is
+              the controller of personal information processed through
+              RealWithin.
+            </p>
+
+            <p>
+              RealWithin is designed to help you reflect on your experiences
+              and recognise patterns and changes in what you have shared over
+              time. RealWithin is not a medical service, therapy service,
+              diagnostic tool or substitute for professional care.
+            </p>
+          </div>
+        </div>
+
+        {/* PRIVACY CONTENT */}
+        <div className="mt-12 space-y-10 text-[16px] leading-7 text-[#606660] sm:text-[17px] sm:leading-8">
           <Section title="1. Information We Collect">
             <Subheading>Account information</Subheading>
 
-            <p>When you create an account, we may collect information such as:</p>
+            <p>
+              When you create an account, we may collect information such as:
+            </p>
 
             <List
               items={[
@@ -78,7 +84,9 @@ export default function PrivacyPage() {
               choose to write.
             </p>
 
-            <Subheading>Information created from your reflections</Subheading>
+            <Subheading>
+              Information created from your reflections
+            </Subheading>
 
             <p>
               RealWithin may process your reflections to create information
@@ -119,7 +127,9 @@ export default function PrivacyPage() {
               the relevant app marketplace and subscription infrastructure.
             </p>
 
-            <Subheading>Notification information and preferences</Subheading>
+            <Subheading>
+              Notification information and preferences
+            </Subheading>
 
             <p>If you enable notifications, RealWithin may process:</p>
 
@@ -153,6 +163,32 @@ export default function PrivacyPage() {
               You can change your notification preferences in RealWithin or
               disable notifications through your device settings.
             </p>
+
+            <Subheading>Usage and analytics information</Subheading>
+
+            <p>
+              RealWithin may collect limited first-party usage and analytics
+              information to understand how the app and website are used and to
+              improve the service. This may include:
+            </p>
+
+            <List
+              items={[
+                "app or website events, such as starting or completing a Reflection;",
+                "views or interactions with Patterns, Memory, You and Premium features;",
+                "trial, subscription and conversion events;",
+                "website Preview interactions and store-link clicks;",
+                "referral or acquisition source information; and",
+                "technical information needed to measure app and website performance.",
+              ]}
+            />
+
+            <p>
+              This information is used to measure product performance,
+              understand which parts of RealWithin are useful, and improve
+              acquisition and conversion. RealWithin does not use your
+              reflection text for advertising.
+            </p>
           </Section>
 
           <Section title="2. How We Use Your Information">
@@ -168,6 +204,8 @@ export default function PrivacyPage() {
                 "synchronise your RealWithin information across supported sessions or devices;",
                 "determine whether you have access to Premium features;",
                 "provide notifications you have chosen to receive;",
+                "understand how RealWithin is used and improve the service;",
+                "measure acquisition, conversion and referral performance;",
                 "maintain, secure and troubleshoot the service; and",
                 "respond to support, privacy and account-deletion requests.",
               ]}
@@ -191,7 +229,9 @@ export default function PrivacyPage() {
               requested RealWithin feature.
             </p>
 
-            <p>RealWithin currently uses OpenAI API services for this processing.</p>
+            <p>
+              RealWithin currently uses OpenAI API services for this processing.
+            </p>
 
             <p>
               According to OpenAI&apos;s policies for its API and business
@@ -244,7 +284,10 @@ export default function PrivacyPage() {
               privacy terms and our arrangements with them.
             </p>
 
-            <p>We do not sell your reflections or personal information to advertisers.</p>
+            <p>
+              We do not sell your reflections or personal information to
+              advertisers.
+            </p>
           </Section>
 
           <Section title="5. Your Reflections and Sensitive Information">
@@ -274,8 +317,8 @@ export default function PrivacyPage() {
             </p>
 
             <p>
-              Agreeing to RealWithin&apos;s Terms of Use does not itself provide
-              this consent.
+              Agreeing to RealWithin&apos;s Terms of Use does not itself
+              provide this consent.
             </p>
 
             <p>
@@ -320,8 +363,8 @@ export default function PrivacyPage() {
 
             <p>
               If you delete your account, we will delete or initiate deletion
-              of personal information associated with your account, except where
-              limited information must be retained for legitimate legal,
+              of personal information associated with your account, except
+              where limited information must be retained for legitimate legal,
               security, fraud-prevention or regulatory purposes.
             </p>
 
@@ -335,16 +378,16 @@ export default function PrivacyPage() {
 
             <p>
               Information may also be retained for a limited period where
-              necessary to complete deletion processes, maintain system security
-              or comply with applicable law.
+              necessary to complete deletion processes, maintain system
+              security or comply with applicable law.
             </p>
           </Section>
 
           <Section title="8. Account and Data Deletion">
             <p>
               You may delete your RealWithin account and associated information
-              through the account-deletion option provided in RealWithin&apos;s
-              Settings.
+              through the account-deletion option provided in
+              RealWithin&apos;s Settings.
             </p>
 
             <p>
@@ -356,8 +399,7 @@ export default function PrivacyPage() {
               >
                 account-deletion page
               </Link>{" "}
-              or contact{" "}
-              <EmailLink />.
+              or contact <EmailLink />.
             </p>
 
             <p>
@@ -367,10 +409,10 @@ export default function PrivacyPage() {
 
             <p>
               Deleting your RealWithin account does not necessarily cancel an
-              active Apple App Store or Google Play subscription. If applicable,
-              you should separately manage or cancel your subscription through
-              the relevant marketplace or through the subscription-management
-              options provided by RealWithin.
+              active Apple App Store or Google Play subscription. If
+              applicable, you should separately manage or cancel your
+              subscription through the relevant marketplace or through the
+              subscription-management options provided by RealWithin.
             </p>
 
             <p>
@@ -447,9 +489,9 @@ export default function PrivacyPage() {
             <p>RealWithin is not intended for children under 13.</p>
 
             <p>
-              If local law requires a higher minimum age for a person to consent
-              to the processing of their personal information, that higher age
-              may apply.
+              If local law requires a higher minimum age for a person to
+              consent to the processing of their personal information, that
+              higher age may apply.
             </p>
 
             <p>
@@ -546,19 +588,32 @@ export default function PrivacyPage() {
 
 function Header() {
   return (
-    <header className="border-b border-[#ded8cc]">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-7 sm:px-10">
+    <header className="border-b border-[#e3ddd2]">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
         <Link href="/" className="flex items-center gap-3">
           <span className="relative h-9 w-9 overflow-hidden rounded-full border-2 border-[#303430]">
             <span className="absolute inset-y-0 right-0 w-1/2 bg-[#303430]" />
           </span>
-          <span className="font-serif text-2xl text-[#292d29]">RealWithin</span>
+
+          <span className="font-serif text-2xl text-[#292d29]">
+            RealWithin
+          </span>
         </Link>
 
-        <nav className="flex gap-5 text-sm text-[#737872]">
-          <Link href="/privacy">Privacy</Link>
-          <Link href="/terms">Terms</Link>
-          <Link href="/support">Support</Link>
+        <nav className="flex items-center gap-5 text-sm text-[#666c66]">
+          <Link
+            href="/#journey"
+            className="hidden transition hover:text-[#303430] sm:inline"
+          >
+            How it works
+          </Link>
+
+          <Link
+            href="/try"
+            className="rounded-full bg-[#68786b] px-5 py-2.5 font-semibold text-white transition hover:bg-[#5d6c60]"
+          >
+            Try RealWithin
+          </Link>
         </nav>
       </div>
     </header>
@@ -568,13 +623,25 @@ function Header() {
 function Footer() {
   return (
     <footer className="border-t border-[#ded8cc]">
-      <div className="mx-auto flex max-w-7xl flex-col gap-5 px-6 py-9 text-sm text-[#777c76] sm:flex-row sm:justify-between sm:px-10">
+      <div className="mx-auto flex max-w-7xl flex-col gap-5 px-6 py-8 text-sm text-[#777c76] sm:flex-row sm:items-center sm:justify-between lg:px-10">
         <p>© 2026 RealWithin</p>
+
         <div className="flex flex-wrap gap-5">
-          <Link href="/privacy">Privacy</Link>
-          <Link href="/terms">Terms</Link>
-          <Link href="/support">Support</Link>
-          <Link href="/delete-account">Delete account</Link>
+          <Link href="/privacy" className="hover:text-[#343934]">
+            Privacy
+          </Link>
+
+          <Link href="/terms" className="hover:text-[#343934]">
+            Terms
+          </Link>
+
+          <Link href="/support" className="hover:text-[#343934]">
+            Support
+          </Link>
+
+          <Link href="/delete-account" className="hover:text-[#343934]">
+            Delete account
+          </Link>
         </div>
       </div>
     </footer>
@@ -586,25 +653,38 @@ function Section({
   children,
 }: {
   title: string;
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
-    <section className="space-y-5">
-      <h2 className="text-2xl font-semibold tracking-tight text-[#3f443f]">
+    <section className="border-t border-[#e4ded3] pt-8">
+      <h2 className="text-xl font-semibold tracking-tight text-[#3f443f] sm:text-2xl">
         {title}
       </h2>
-      {children}
+
+      <div className="mt-4 space-y-4">
+        {children}
+      </div>
     </section>
   );
 }
 
-function Subheading({ children }: { children: React.ReactNode }) {
+function Subheading({
+  children,
+}: {
+  children: ReactNode;
+}) {
   return (
-    <h3 className="pt-2 text-lg font-semibold text-[#4a504a]">{children}</h3>
+    <h3 className="pt-2 text-lg font-semibold text-[#4a504a]">
+      {children}
+    </h3>
   );
 }
 
-function List({ items }: { items: string[] }) {
+function List({
+  items,
+}: {
+  items: string[];
+}) {
   return (
     <ul className="list-disc space-y-2 pl-6">
       {items.map((item) => (
@@ -614,11 +694,25 @@ function List({ items }: { items: string[] }) {
   );
 }
 
-function Intro({ children }: { children: React.ReactNode }) {
-  return <p className="text-xl leading-9 text-[#555b55]">{children}</p>;
+function Intro({
+  children,
+}: {
+  children: ReactNode;
+}) {
+  return (
+    <p className="text-lg leading-8 text-[#555b55]">
+      {children}
+    </p>
+  );
 }
 
-function Provider({ name, text }: { name: string; text: string }) {
+function Provider({
+  name,
+  text,
+}: {
+  name: string;
+  text: string;
+}) {
   return (
     <p>
       <strong className="text-[#414641]">{name}</strong> — {text}
