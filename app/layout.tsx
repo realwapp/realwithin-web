@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://realwithin.com"),
-  title: "RealWithin | Self-Awareness & Reflection",
+  title: "RealWithin",
   description:
     "Reflect on how you feel, notice patterns over time, and understand yourself more clearly with RealWithin.",
   applicationName: "RealWithin",
