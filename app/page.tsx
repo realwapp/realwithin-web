@@ -17,21 +17,21 @@ export default function Home() {
             </span>
           </Link>
 
-          <nav className="flex items-center gap-5 text-sm text-[#666c66]">
-            <Link
-              href="#journey"
-              className="hidden transition hover:text-[#303430] sm:inline"
-            >
-              How it works
-            </Link>
+        <nav className="flex items-center gap-5 text-sm text-[#666c66]">
+          <Link
+            href="#journey"
+            className="hidden transition hover:text-[#303430] sm:inline"
+          >
+            How it works
+          </Link>
 
-            <Link
-              href="/try"
-              className="rounded-full bg-[#68786b] px-5 py-2.5 font-semibold text-white transition hover:bg-[#5d6c60]"
-            >
-              Try RealWithin
-            </Link>
-          </nav>
+          <Link
+            href="/try"
+            className="rounded-full bg-[#68786b] px-5 py-2.5 font-semibold text-white transition hover:bg-[#5d6c60]"
+          >
+            Try RealWithin
+          </Link>
+        </nav>
         </div>
       </header>
 
@@ -164,8 +164,7 @@ export default function Home() {
               </h2>
 
               <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-[#6c726c]">
-                Choose a feeling and what it&apos;s connected to. You will get
-                a preview of how the app works.
+                Choose how you feel and get a preview of how the app works.
               </p>
 
               <Link
@@ -223,6 +222,13 @@ export default function Home() {
           <p>© 2026 RealWithin</p>
 
           <div className="flex flex-wrap gap-5">
+            <Link
+              href="/self-reflection-library"
+              className="hover:text-[#343934]"
+            >
+              Explore
+            </Link>
+
             <Link href="/privacy" className="hover:text-[#343934]">
               Privacy
             </Link>
