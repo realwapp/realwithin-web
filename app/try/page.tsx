@@ -35,14 +35,14 @@ const reflections: Record<Feeling, string[]> = {
     "Feeling okay may not seem important, but it can still tell you something. Notice what feels calmer, lighter or more settled today.",
   ],
 
-  Tired: [
-    "Feeling tired can make small things feel harder than usual. You may not need to solve everything today. Notice what really needs your energy.",
+    Tired: [
+    "Feeling tired can make small things feel harder than usual. You may not need to solve everything today. Give your energy to what feels most important right now, and be gentle with yourself along the way.",
 
     "When your energy is low, everything can start to feel equally important. It may help to decide what can wait.",
 
     "Tiredness can make it harder to know what you need. Before pushing yourself further, notice whether rest would help more than effort.",
 
-    "You may be used to carrying on even when you are tired. Today might be a good time to notice what you are asking from yourself.",
+    "You may be used to carrying on even when you are tired. Today might be a good time to ask yourself what can wait, and give yourself permission to leave it for later.",
   ],
 
   Anxious: [
@@ -50,29 +50,29 @@ const reflections: Record<Feeling, string[]> = {
 
     "Anxiety can make uncertainty feel like a problem that must be solved immediately. You may not need every answer before taking the next step.",
 
-    "When your mind is searching for danger or mistakes, even small choices can feel bigger. Notice what is actually in your control right now.",
+    "When your mind is searching for danger or mistakes, even small choices can feel bigger. Find one small thing that is in your control right now.",
 
     "Feeling anxious can make you want to think through every possibility. Sometimes more thinking adds pressure instead of giving you clarity.",
   ],
 
-  Heavy: [
+    Heavy: [
     "When things feel heavy, even simple choices can take more effort. You may need less pressure from yourself today, not more.",
 
-    "A heavy feeling can make the whole day seem harder. It may help to focus on what feels most difficult instead of treating everything as one big problem.",
+    "A heavy feeling can make the whole day seem harder. You may not need to carry all of it at once. Notice what feels heaviest right now.",
 
     "When something feels heavy, you do not always need to understand it immediately. Giving the feeling some space can be enough for now.",
 
-    "You may be carrying more emotionally than you realise. Notice whether you are expecting yourself to keep going as if nothing feels difficult.",
+    "When you feel heavy, it can be hard to know what would help. Notice whether you need more space, more support, or less pressure today.",
   ],
 
   Lonely: [
-    "Feeling lonely can make you want connection while reaching out still feels difficult. Notice what kind of connection would feel helpful right now.",
+    "Feeling lonely can make you want connection while reaching out still feels difficult. Notice what kind of connection would feel safe and helpful right now.",
 
     "Loneliness is not always about being alone. Sometimes it appears when you do not feel understood, seen or close to the people around you.",
 
     "When you feel lonely, it can be easy to focus on who is not there. It may help to notice what kind of connection you are actually missing.",
 
-    "Feeling lonely can make reaching out feel more important and more difficult at the same time. A small moment of connection may be enough to begin.",
+    "Feeling lonely can make reaching out feel more important and more difficult at the same time. A small message or moment with someone you feel safe with may be enough for now.",
   ],
 
   Overwhelmed: [
