@@ -1,7 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import {
+  useEffect,
+  useState,
+} from "react";
+
+import {
+  trackWebEvent,
+} from "../../lib/webAnalytics";
 
 type Feeling =
   | "Okay"
@@ -115,6 +122,12 @@ export default function TryRealWithinPage() {
     Partial<Record<Feeling, number[]>>
   >({});
 
+  useEffect(() => {
+  void trackWebEvent(
+    "preview_started"
+  );
+}, []);
+
   function checkIn() {
     if (!feeling) return;
 
@@ -146,6 +159,22 @@ export default function TryRealWithinPage() {
 
     setReflection(bank[randomIndex]);
 
+      void trackWebEvent(
+    "preview_checkin_completed",
+    {
+      feeling,
+    }
+  );
+
+  void trackWebEvent(
+    "preview_reflection_viewed",
+    {
+      feeling,
+      reflection_index:
+        randomIndex,
+    }
+  );
+
     setSeenByFeeling((current) => ({
       ...current,
       [feeling]: [...nextSeen, randomIndex],
@@ -155,10 +184,18 @@ export default function TryRealWithinPage() {
   }
 
   function reset() {
-    setFeeling(null);
-    setReflection(null);
-    setSubmitted(false);
-  }
+  void trackWebEvent(
+    "preview_try_another",
+    {
+      previous_feeling:
+        feeling,
+    }
+  );
+
+  setFeeling(null);
+  setReflection(null);
+  setSubmitted(false);
+}
 
   return (
     <div className="min-h-screen bg-[#f8f3e9] text-[#3f433f]">
@@ -209,7 +246,16 @@ export default function TryRealWithinPage() {
                       <button
                         key={item}
                         type="button"
-                        onClick={() => setFeeling(item)}
+                        onClick={() => {
+                        setFeeling(item);
+
+                        void trackWebEvent(
+                          "preview_feeling_selected",
+                          {
+                            feeling: item,
+                          }
+                        );
+                      }}
                         className={`rounded-full border px-5 py-3 text-[17px] transition sm:text-lg ${
                           selected
                             ? "border-[#7c897d] bg-[#dfe3d9] font-medium text-[#454c46]"
@@ -288,6 +334,16 @@ export default function TryRealWithinPage() {
 
                     <Link
                       href="/"
+                      onClick={() => {
+                        void trackWebEvent(
+                          "preview_cta_clicked",
+                          {
+                            feeling,
+                            destination:
+                              "website_home",
+                          }
+                        );
+                      }}
                       className="rounded-full bg-[#718075] px-6 py-3.5 text-center font-semibold text-white transition hover:bg-[#647267]"
                     >
                       Discover RealWithin
