@@ -14,7 +14,7 @@ export default function PrivacyPage() {
           </h1>
 
           <p className="mt-4 text-sm text-[#888d87]">
-            Last updated: 4 September 2026
+            Last updated: 6 September 2026
           </p>
 
           <div className="mt-8 space-y-4 text-[16px] leading-7 text-[#606660] sm:text-[17px] sm:leading-8">
@@ -178,16 +178,58 @@ export default function PrivacyPage() {
                 "views or interactions with Patterns, Memory, You and Premium features;",
                 "trial, subscription and conversion events;",
                 "website Preview interactions and store-link clicks;",
-                "referral or acquisition source information; and",
+                "anonymous website and session identifiers used to measure visits and funnel activity;",
+                "acquisition information such as source, medium, campaign, content identifier, referral code and landing page;",
+                "app-store or install attribution information where available; and",
                 "technical information needed to measure app and website performance.",
               ]}
             />
 
             <p>
+              Where technically possible, acquisition information may be linked
+              to your RealWithin account after signup so that RealWithin can
+              understand whether a visit or referral led to an install, trial
+              or Premium subscription.
+            </p>
+
+            <p>
+              On Android, this may include Google Play install-referrer
+              information. On iOS, RealWithin uses Apple-supported campaign or
+              aggregate attribution where available and does not create
+              individual attribution where Apple does not provide it.
+            </p>
+
+            <p>
               This information is used to measure product performance,
               understand which parts of RealWithin are useful, and improve
-              acquisition and conversion. RealWithin does not use your
-              reflection text for advertising.
+              acquisition and conversion.
+            </p>
+
+            <p>
+              RealWithin does not use your reflection text for advertising.
+            </p>
+
+            <Subheading>Try RealWithin website Preview</Subheading>
+
+            <p>
+              The Try RealWithin website Preview does not require an account or
+              allow free-text reflection input.
+            </p>
+
+            <p>
+              Selections made in the Preview are not saved as personal
+              Reflection history.
+            </p>
+
+            <p>
+              RealWithin may record limited analytics events about how the
+              Preview is used, such as whether the Preview was started or
+              completed and whether a store link was selected.
+            </p>
+
+            <p>
+              The Preview does not use cookies or localStorage to retain your
+              Preview selections.
             </p>
           </Section>
 
