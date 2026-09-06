@@ -356,7 +356,7 @@ export default function TryRealWithinPage() {
         </section>
 
         <p className="mx-auto mt-4 max-w-md text-center text-xs leading-5 text-[#8a8e89]">
-          Website preview only. Nothing you select here is saved.
+          Website preview only. Your choices are not saved as a personal Reflection.
         </p>
       </main>
     </div>

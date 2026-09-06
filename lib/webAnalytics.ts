@@ -239,6 +239,57 @@ function getAnalyticsState() {
   return state;
 }
 
+export function getWebAnonymousId() {
+  if (
+    typeof window ===
+    "undefined"
+  ) {
+    return null;
+  }
+
+  return getAnalyticsState()
+    .anonymousId;
+}
+
+export function getGooglePlayDownloadUrl() {
+  const baseUrl =
+    "https://play.google.com/store/apps/details";
+
+  if (
+    typeof window ===
+    "undefined"
+  ) {
+    return (
+      `${baseUrl}?id=app.realwithin`
+    );
+  }
+
+  const anonymousId =
+    getAnalyticsState()
+      .anonymousId;
+
+  const installReferrer =
+    new URLSearchParams({
+      rw_aid:
+        anonymousId,
+    }).toString();
+
+  const url =
+    new URL(baseUrl);
+
+  url.searchParams.set(
+    "id",
+    "app.realwithin"
+  );
+
+  url.searchParams.set(
+    "referrer",
+    installReferrer
+  );
+
+  return url.toString();
+}
+
 export async function trackWebEvent(
   eventName: WebEventName,
   properties: WebAnalyticsProperties = {}
