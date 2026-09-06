@@ -5,6 +5,31 @@ export const metadata: Metadata = {
   title: "Shared from RealWithin",
   description:
     "Discover RealWithin, a place to reflect on how you feel and notice patterns and changes over time.",
+
+  openGraph: {
+    title: "Shared from RealWithin",
+    description:
+      "Discover RealWithin, a place to reflect on how you feel and notice patterns and changes over time.",
+    url: "https://realwithin.com/share/you",
+    siteName: "RealWithin",
+    type: "website",
+    images: [
+      {
+        url: "https://realwithin.com/realwithin-share.png",
+        alt: "RealWithin",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Shared from RealWithin",
+    description:
+      "Discover RealWithin, a place to reflect on how you feel and notice patterns and changes over time.",
+    images: [
+      "https://realwithin.com/realwithin-share.png",
+    ],
+  },
 };
 
 export default function SharedYouPage() {
