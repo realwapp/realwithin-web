@@ -87,6 +87,13 @@ export default function Home() {
               <h2 className="text-3xl font-semibold tracking-[-0.03em] text-[#414641] sm:text-4xl">
                 See how RealWithin works.
               </h2>
+              <p className="mt-4 text-lg font-medium text-[#4f554f]">
+                Four focused spaces. No endless feed.
+              </p>
+
+              <p className="mx-auto mt-2 max-w-xl text-[16px] leading-7 text-[#747a74]">
+                Reflect, Patterns, Memory and YOU stay simple while your understanding grows over time.
+              </p>
             </div>
 
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
