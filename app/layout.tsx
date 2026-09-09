@@ -41,8 +41,8 @@ export const metadata: Metadata = {
     "RealWithin",
 
   icons: {
-    icon: "/icon.svg",
-  },
+  icon: "/icon.png",
+},
 };
 
 export default function RootLayout({
