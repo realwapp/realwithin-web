@@ -29,9 +29,41 @@ const sections = [
         href: "/what-is-self-reflection",
         title: "What Is Self-Reflection?",
       },
-      {
+     {
         href: "/self-reflection-questions",
-        title: "Self-Reflection Questions to Understand Yourself Better",
+          title: "Self-Reflection Questions to Understand Yourself Better",
+        },
+      {
+        href: "/how-to-choose-a-self-reflection-app",
+        title: "How to Choose a Self-Reflection App",
+      },
+      {
+        href: "/self-reflection-app-understanding-patterns",
+        title: "Self-Reflection App for Understanding Your Patterns",
+      },
+      {
+        href: "/app-to-understand-yourself-over-time",
+        title: "App to Help You Understand Yourself Over Time",
+      },
+      {
+        href: "/ai-reflection-notice-patterns-over-time",
+        title: "How AI Reflection Can Help You Notice Patterns Over Time",
+      },
+      {
+        href: "/mood-tracking-vs-self-reflection",
+        title: "Mood Tracking vs Self-Reflection",
+      },
+      {
+        href: "/journaling-vs-self-reflection",
+        title: "Journaling vs Self-Reflection",
+      },
+     {
+        href: "/reflect-without-long-journal-entry",
+        title: "How to Reflect Without Writing a Long Journal Entry",
+      },
+      {
+        href: "/what-makes-self-reflection-app-useful-long-term",
+        title: "What Makes a Self-Reflection App Useful Long Term?",
       },
       {
         href: "/journaling-for-self-awareness",
