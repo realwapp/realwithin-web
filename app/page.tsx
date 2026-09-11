@@ -17,21 +17,21 @@ export default function Home() {
             </span>
           </Link>
 
-          <nav className="flex items-center gap-5 text-sm text-[#666c66]">
-            <Link
-              href="#journey"
-              className="hidden transition hover:text-[#303430] sm:inline"
-            >
-              How it works
-            </Link>
+        <nav className="flex items-center gap-5 text-sm text-[#666c66]">
+          <Link
+            href="#journey"
+            className="hidden transition hover:text-[#303430] sm:inline"
+          >
+            How it works
+          </Link>
 
-            <Link
-              href="#download"
-              className="rounded-full bg-[#68786b] px-5 py-2.5 font-semibold text-white transition hover:bg-[#5d6c60]"
-            >
-              Download app
-            </Link>
-          </nav>
+          <Link
+            href="/try"
+            className="rounded-full bg-[#68786b] px-5 py-2.5 font-semibold text-white transition hover:bg-[#5d6c60]"
+          >
+            Try RealWithin
+          </Link>
+        </nav>
         </div>
       </header>
 
@@ -55,47 +55,16 @@ export default function Home() {
               time.
             </p>
 
-            <div
-              id="download"
-              className="mt-8 flex flex-col items-center scroll-mt-24"
-            >
-              <div className="flex flex-wrap items-center justify-center gap-3">
-                <a
-                  href="https://apps.apple.com/app/id6803466360"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Download RealWithin on the App Store"
-                >
-                  <img
-                    src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                    alt="Download on the App Store"
-                    className="h-[50px] w-auto"
-                  />
-                </a>
-
-                <a
-                  href="https://play.google.com/store/apps/details?id=app.realwithin"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Get RealWithin on Google Play"
-                >
-                  <img
-                    src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                    alt="Get it on Google Play"
-                    className="h-[65px] w-auto"
-                  />
-                </a>
-              </div>
-
+            <div className="mt-8 flex flex-col items-center">
               <Link
                 href="/try"
-                className="mt-5 text-sm font-semibold text-[#687068] underline decoration-[#aeb5ad] underline-offset-4 transition hover:text-[#303430]"
+                className="rounded-full bg-[#68786b] px-7 py-3.5 font-semibold text-white transition hover:bg-[#5d6c60]"
               >
-                Try the web preview
+                Try RealWithin
               </Link>
 
-              <p className="mt-2 text-sm text-[#858a84]">
-                No account needed for the preview.
+              <p className="mt-3 text-sm text-[#858a84]">
+                No account needed.
               </p>
 
               <Link
@@ -118,14 +87,12 @@ export default function Home() {
               <h2 className="text-3xl font-semibold tracking-[-0.03em] text-[#414641] sm:text-4xl">
                 See how RealWithin works.
               </h2>
-
               <p className="mt-4 text-lg font-medium text-[#4f554f]">
                 Four focused spaces. No endless feed.
               </p>
 
               <p className="mx-auto mt-2 max-w-xl text-[16px] leading-7 text-[#747a74]">
-                Reflect, Patterns, Memory and YOU stay simple while your
-                understanding grows over time.
+                Reflect, Patterns, Memory and YOU stay simple while your understanding grows over time.
               </p>
             </div>
 
@@ -195,51 +162,23 @@ export default function Home() {
           </div>
         </section>
 
-        {/* DOWNLOAD / PREVIEW */}
+        {/* TRY REALWITHIN */}
         <section className="border-y border-[#d9dbcf] bg-[#e9eadf]">
           <div className="mx-auto max-w-5xl px-6 py-16 text-center lg:px-10 lg:py-20">
             <div className="mx-auto max-w-2xl">
               <h2 className="text-3xl font-semibold tracking-[-0.03em] text-[#3f443f] sm:text-4xl">
-                Start understanding yourself over time.
+                Start with how you feel right now.
               </h2>
 
               <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-[#6c726c]">
-                Download RealWithin and start with how you feel today.
+                Choose how you feel and get a preview of how the app works.
               </p>
-
-              <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-                <a
-                  href="https://apps.apple.com/app/id6803466360"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Download RealWithin on the App Store"
-                >
-                  <img
-                    src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                    alt="Download on the App Store"
-                    className="h-[50px] w-auto"
-                  />
-                </a>
-
-                <a
-                  href="https://play.google.com/store/apps/details?id=app.realwithin"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Get RealWithin on Google Play"
-                >
-                  <img
-                    src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                    alt="Get it on Google Play"
-                    className="h-[65px] w-auto"
-                  />
-                </a>
-              </div>
 
               <Link
                 href="/try"
-                className="mt-5 inline-flex text-sm font-semibold text-[#687068] underline decoration-[#aeb5ad] underline-offset-4 transition hover:text-[#303430]"
+                className="mt-8 inline-flex rounded-full bg-[#68786b] px-7 py-3.5 font-semibold text-white transition hover:bg-[#5d6c60]"
               >
-                Or try the web preview
+                Try RealWithin
               </Link>
             </div>
           </div>
@@ -275,10 +214,10 @@ export default function Home() {
             </p>
 
             <Link
-              href="#download"
+              href="/try"
               className="mt-6 inline-flex rounded-full bg-[#68786b] px-7 py-3.5 font-semibold text-white transition hover:bg-[#5d6c60]"
             >
-              Download RealWithin
+              Try RealWithin
             </Link>
           </div>
         </section>
