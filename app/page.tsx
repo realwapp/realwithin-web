@@ -221,18 +221,15 @@ export default function Home() {
             </Link>
           </div>
         </section>
-      </main>
+           </main>
 
       {/* FOOTER */}
       <footer className="border-t border-[#ded8cc] bg-[#f8f3e9]">
         <div className="mx-auto flex max-w-7xl flex-col gap-5 px-6 py-8 text-sm text-[#747973] sm:flex-row sm:items-center sm:justify-between lg:px-10">
           <p>© 2026 RealWithin</p>
 
-          <div className="flex flex-wrap gap-5">
-            <Link
-              href="/self-reflection-library"
-              className="hover:text-[#343934]"
-            >
+          <div className="flex flex-wrap items-center gap-5">
+            <Link href="/self-reflection-library" className="hover:text-[#343934]">
               Explore
             </Link>
 
@@ -251,6 +248,78 @@ export default function Home() {
             <Link href="/delete-account" className="hover:text-[#343934]">
               Delete account
             </Link>
+
+            <div className="flex items-center gap-4 sm:ml-2">
+              <a
+                href="https://www.instagram.com/realwithinapp/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="RealWithin on Instagram"
+                className="transition hover:text-[#343934]"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  className="h-6 w-6"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  aria-hidden="true"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle
+                    cx="17.5"
+                    cy="6.5"
+                    r="1"
+                    fill="currentColor"
+                    stroke="none"
+                  />
+                </svg>
+              </a>
+
+              <a
+                href="https://www.tiktok.com/@realwithinapp"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="RealWithin on TikTok"
+                className="transition hover:text-[#343934]"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  className="h-6 w-6"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M15 4v10.5a4.5 4.5 0 1 1-4-4.47" />
+                  <path d="M15 4c.7 2.4 2.3 3.8 5 4" />
+                </svg>
+              </a>
+
+              <a
+                href="https://www.youtube.com/@RealWithin-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="RealWithin on YouTube"
+                className="transition hover:text-[#343934]"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  className="h-6 w-6"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M21 12c0-2.2-.2-4.1-.5-5-.2-.8-.8-1.4-1.6-1.6C17.5 5 14.8 5 12 5s-5.5 0-6.9.4c-.8.2-1.4.8-1.6 1.6C3.2 7.9 3 9.8 3 12s.2 4.1.5 5c.2.8.8 1.4 1.6 1.6 1.4.4 4.1.4 6.9.4s5.5 0 6.9-.4c.8-.2 1.4-.8 1.6-1.6.3-.9.5-2.8.5-5Z" />
+                  <path d="m10 9 5 3-5 3Z" fill="currentColor" stroke="none" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </footer>
